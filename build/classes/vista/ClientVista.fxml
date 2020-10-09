@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ClienteController">
+   <children>
+      <Pane prefHeight="332.0" prefWidth="295.0">
+         <children>
+            <Button fx:id="btnIndividual" layoutX="82.0" layoutY="127.0" mnemonicParsing="false" onAction="#gIndividual" text="Cliente Individual">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEmpresas" layoutX="80.0" layoutY="76.0" mnemonicParsing="false" onAction="#gEmpresas" text="Cliente Empresas">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnconsultar" layoutX="82.0" layoutY="179.0" mnemonicParsing="false" onAction="#consultar" text="Grid de Clientes">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAtras" layoutX="132.0" layoutY="270.0" mnemonicParsing="false" onAction="#atras" text="Regresar">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

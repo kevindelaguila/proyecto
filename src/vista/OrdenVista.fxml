@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.OrdenController">
+   <children>
+      <Pane layoutX="2.0" layoutY="4.0" prefHeight="653.0" prefWidth="734.0">
+         <children>
+            <Button fx:id="btnInsertar" layoutX="105.0" layoutY="254.0" mnemonicParsing="false" onAction="#insertar" prefHeight="25.0" prefWidth="134.0" text="Agregar Orden" />
+            <Button fx:id="btnActualizar" layoutX="108.0" layoutY="308.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="25.0" prefWidth="134.0" text="Modificar Orden" />
+            <Button fx:id="btnEliminar" layoutX="108.0" layoutY="421.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="134.0" text="Eliminar Orden" />
+            <Button layoutX="105.0" layoutY="368.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="134.0" text="Nueva Orden" />
+            <ChoiceBox fx:id="chCliente" layoutX="98.0" layoutY="20.0" prefHeight="25.0" prefWidth="175.0" />
+            <ChoiceBox fx:id="chProducto1" layoutX="29.0" layoutY="88.0" prefHeight="25.0" prefWidth="113.0" />
+            <ChoiceBox fx:id="chProducto2" layoutX="310.0" layoutY="88.0" prefHeight="25.0" prefWidth="113.0" />
+            <Label layoutX="32.0" layoutY="24.0" text="Cliente">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="63.0" text="Producto 1">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="308.0" layoutY="63.0" text="Producto 2">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="599.0" layoutY="63.0" text="Precio Envio">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPrecio" layoutX="542.0" layoutY="88.0" prefHeight="25.0" prefWidth="181.0" />
+            <Label layoutX="30.0" layoutY="125.0" text="Tipo Envio">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="chTipoEnvio" layoutX="29.0" layoutY="153.0" prefHeight="25.0" prefWidth="181.0" />
+            <Label layoutX="277.0" layoutY="125.0" text="Estado">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="chEstado" layoutX="277.0" layoutY="153.0" prefHeight="25.0" prefWidth="181.0" />
+            <Label layoutX="490.0" layoutY="125.0" text="Dias Entrega">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="chDiasEntrega" layoutX="494.0" layoutY="153.0" prefHeight="25.0" prefWidth="62.0" />
+            <TextField fx:id="txtcantidad1" layoutX="172.0" layoutY="88.0" prefHeight="25.0" prefWidth="62.0" />
+            <TextField fx:id="txtCantidad2" layoutX="463.0" layoutY="88.0" prefHeight="25.0" prefWidth="62.0" />
+            <Button fx:id="btnDetalles" layoutX="463.0" layoutY="599.0" mnemonicParsing="false" onAction="#mas" text="Detalles de la Orden" />
+            <TableView fx:id="tabla" layoutX="293.0" layoutY="216.0" onMouseClicked="#click" prefHeight="353.0" prefWidth="387.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="40.0" text="Id" />
+                  <TableColumn fx:id="colFecha" prefWidth="96.0" text="fecha" />
+                  <TableColumn fx:id="colPrecioEnvio" prefWidth="94.0" text="Precio Envio" />
+                  <TableColumn fx:id="colEstado" prefWidth="85.0" text="Estado" />
+                  <TableColumn fx:id="colTotal" prefWidth="73.0" text="Total" />
+              </columns>
+            </TableView>
+            <Label layoutX="172.0" layoutY="63.0" text="Cantidad" />
+            <Label layoutX="463.0" layoutY="63.0" text="Cantidad" />
+            <Button fx:id="regresar" layoutX="615.0" layoutY="601.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+         </children>
+      </Pane>
+      <Label layoutX="554.0" layoutY="18.0" text="Id">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" editable="false" layoutX="611.0" layoutY="14.0" prefHeight="25.0" prefWidth="84.0" promptText="Id" />
+   </children>
+</AnchorPane>

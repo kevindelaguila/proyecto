@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane prefHeight="472.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.EmpController">
+   <children>
+      <Pane layoutX="4.0" prefHeight="472.0" prefWidth="894.0">
+         <children>
+            <TextField fx:id="txtNombre" layoutX="169.0" layoutY="117.0" />
+            <TextField fx:id="txtDireccion" layoutX="169.0" layoutY="151.0" />
+            <TextField fx:id="txtTelefono" layoutX="169.0" layoutY="186.0" />
+            <TextField fx:id="txtContacto" layoutX="169.0" layoutY="224.0" />
+            <TextField fx:id="txtDescuento" layoutX="169.0" layoutY="270.0" />
+            <Button fx:id="btnRegistrar" layoutX="380.0" layoutY="371.0" mnemonicParsing="false" onAction="#registrarEmpresa" prefHeight="25.0" prefWidth="101.0" text="Agregar Cliente" />
+            <Button fx:id="btnActualizar" layoutX="531.0" layoutY="371.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="25.0" prefWidth="127.0" text="Modificar Cliente" />
+            <Button fx:id="btnEliminar" layoutX="693.0" layoutY="371.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="116.0" text="Eliminar Cliente" />
+            <TextField fx:id="txtId" editable="false" layoutX="169.0" layoutY="79.0" />
+            <Button fx:id="btnNuevo" layoutX="175.0" layoutY="327.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="137.0" text="Nuevo Cliente" />
+            <Button fx:id="btnAtras" layoutX="809.0" layoutY="412.0" mnemonicParsing="false" onAction="#atras" text="Regresar" />
+            <TableView fx:id="tabla" layoutX="371.0" layoutY="70.0" onMouseClicked="#click" prefHeight="282.0" prefWidth="501.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="47.0" text="Id" />
+                <TableColumn fx:id="colNombre" prefWidth="90.0" text="Nombre" />
+                  <TableColumn fx:id="colDireccion" prefWidth="100.0" text="Direccion" />
+                  <TableColumn fx:id="colTelefono" prefWidth="90.0" text="Telefono" />
+                  <TableColumn fx:id="colContacto" minWidth="0.0" prefWidth="105.0" text="Contacto" />
+                  <TableColumn fx:id="colDescuento" prefWidth="70.0" text="Descuento" />
+              </columns>
+            </TableView>
+            <Label layoutX="77.0" layoutY="83.0" text="Id" />
+            <Label layoutX="73.0" layoutY="121.0" text="Nombre" />
+            <Label layoutX="73.0" layoutY="155.0" text="Direccion" />
+            <Label layoutX="73.0" layoutY="190.0" text="Telefono" />
+            <Label layoutX="73.0" layoutY="228.0" text="Contacto" />
+            <Label layoutX="73.0" layoutY="274.0" text="Descuento" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
